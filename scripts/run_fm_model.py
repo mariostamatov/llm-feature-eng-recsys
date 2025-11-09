@@ -353,16 +353,16 @@ def main():
         print(f"    {key}: {value}")
     
     if ci_95_llm[1] < ci_95_human[0]:
-        print(f"Hypothesis Confirmed (at 95% confidence): LLM-based model performed statistically significantly better (95% CI: {ci_95_llm[0]:.4f}-{ci_95_llm[1]:.4f} vs {ci_95_human[0]:.4f}-{ci_95_human[1]:.4f}).")
+        print(f"LLM-based model performed statistically significantly better (95% CI: {ci_95_llm[0]:.4f}-{ci_95_llm[1]:.4f} vs {ci_95_human[0]:.4f}-{ci_95_human[1]:.4f}).")
     elif ci_95_human[1] < ci_95_llm[0]:
-        print(f"Hypothesis Rejected (at 95% confidence): Human-based model performed statistically significantly better (95% CI: {ci_95_human[0]:.4f}-{ci_95_human[1]:.4f} vs {ci_95_llm[0]:.4f}-{ci_95_llm[1]:.4f}).")
+        print(f"Human-based model performed statistically significantly better (95% CI: {ci_95_human[0]:.4f}-{ci_95_human[1]:.4f} vs {ci_95_llm[0]:.4f}-{ci_95_llm[1]:.4f}).")
     else:
         print('Result: No statistically significant difference in model performance (95% CIs overlap).')
 
     if ci_99_llm[1] < ci_99_human[0]:
-        print(f"Hypothesis Confirmed (at 99% confidence): LLM-based model performed statistically significantly better (99% CI: {ci_99_llm[0]:.4f}-{ci_99_llm[1]:.4f} vs {ci_99_human[0]:.4f}-{ci_99_human[1]:.4f}).")
+        print(f"LLM-based model performed statistically significantly better (99% CI: {ci_99_llm[0]:.4f}-{ci_99_llm[1]:.4f} vs {ci_99_human[0]:.4f}-{ci_99_human[1]:.4f}).")
     elif ci_99_human[1] < ci_99_llm[0]:
-        print(f"Hypothesis Rejected (at 99% confidence): Human-based model performed statistically significantly better (99% CI: {ci_99_human[0]:.4f}-{ci_99_human[1]:.4f} vs {ci_99_llm[0]:.4f}-{ci_99_llm[1]:.4f}).")
+        print(f"Human-based model performed statistically significantly better (99% CI: {ci_99_human[0]:.4f}-{ci_99_human[1]:.4f} vs {ci_99_llm[0]:.4f}-{ci_99_llm[1]:.4f}).")
     else:
         print('Result: No statistically significant difference in model performance (99% CIs overlap).')
 

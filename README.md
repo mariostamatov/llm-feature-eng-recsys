@@ -33,7 +33,7 @@ The project's methodology is structured into three interconnected modules, ensur
 
 ## Technology Stack
 
-*   **Programming Language:** Python 3.12
+*   **Programming Language:** Python 3.13
 *   **Data Manipulation:** pandas, NumPy, scikit-learn
 *   **Machine Learning:** PyTorch (for Factorization Machine implementation)
 *   **LLM Interaction:** Google Gemini 2.5 Flash (google-generativeai library)
