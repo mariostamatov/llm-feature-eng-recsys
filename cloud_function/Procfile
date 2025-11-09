@@ -1,0 +1,1 @@
+web: functions-framework --target=process_movies_http --port=$PORT

@@ -1,0 +1,21 @@
+# Data files
+/data/
+!/data/.gitkeep
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.venv/
+
+# IDE specific files
+.idea/
+.vscode/
+
+# OS specific files
+.DS_Store
